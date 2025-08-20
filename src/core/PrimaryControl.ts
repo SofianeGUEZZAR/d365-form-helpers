@@ -1081,6 +1081,7 @@ export class PrimaryControl {
      * @param delegateFunction A predicate function to filter controls.
      * @param isVisible A boolean indicating whether the controls should be visible.
      */
+    public setVisible<T extends Xrm.Controls.Control>(delegateFunction: Xrm.Collection.MatchingDelegate<Xrm.Controls.Control>, isVisible: boolean): void;
     public setVisible<T extends Xrm.Controls.Control>(input: T | string | number | (number | string | T)[] | Xrm.Collection.MatchingDelegate<Xrm.Controls.Control>, isVisible: boolean): void {
         if (!input) {
             warnMessage(`[PrimaryControl - Warning] setVisible: Unsupported input type:`, input);
@@ -1121,6 +1122,7 @@ export class PrimaryControl {
      * @param delegateFunction A predicate function to filter controls.
      * @param isDisabled A boolean indicating whether the controls should be disabled.
      */
+    public setDisabled<T extends Xrm.Controls.Control>(delegateFunction: Xrm.Collection.MatchingDelegate<Xrm.Controls.Control>, isDisabled: boolean): void;
     public setDisabled<T extends Xrm.Controls.Control>(input: T | string | number | (number | string | T)[] | Xrm.Collection.MatchingDelegate<Xrm.Controls.Control>, isDisabled: boolean): void {
         if (!input) {
             warnMessage(`[PrimaryControl - Warning] setDisabled: Unsupported input type:`, input);
