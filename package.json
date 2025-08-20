@@ -1,6 +1,6 @@
 {
   "name": "@sguez/d365-form-helpers",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "",
   "main": "dist/core/index.js",
   "types": "dist/core/index.d.ts",
@@ -9,7 +9,7 @@
     "publish": "publish --scope=@sguez --access public"
   },
   "keywords": [],
-  "author": "Chisyeuf",
+  "author": "Sofiane GUEZZAR",
   "license": "MIT",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
