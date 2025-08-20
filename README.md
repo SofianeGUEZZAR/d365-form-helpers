@@ -1,0 +1,2 @@
+"moduleResolution": "NodeNext"
+"module": "nodenext"
