@@ -1,11 +1,12 @@
 {
-  "name": "d365-form-helpers",
+  "name": "@sguez/d365-form-helpers",
   "version": "1.0.0",
   "description": "",
   "main": "dist/core/index.js",
   "types": "dist/core/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "publish --scope=@sguez --access public"
   },
   "keywords": [],
   "author": "Chisyeuf",
@@ -16,7 +17,7 @@
     "@types/xrm": "^9.0.87",
     "typescript": "^5.9.2"
   },
-  
+
   "exports": {
     "./CheckTypes": {
         "types": "./dist/core/CheckTypes.d.ts",
