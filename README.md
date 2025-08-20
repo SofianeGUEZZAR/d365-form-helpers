@@ -55,14 +55,14 @@ Make Dynamics client scripting:
 
 ---
 
-## Quick usage examples (copy/paste)
+## Quick usage examples
 
 > All examples assume `@types/xrm` is installed as a dev dependency for editor support.
 
 ### `Provider.from` — automatic context detection
 
 ```ts
-import { Provider } from "@sguez/d365-form-helpers";
+import Provider from "@sguez/d365-form-helpers/Provider";
 
 // In an onLoad handler
 function onLoad(executionContext: Xrm.Events.EventContext) {
@@ -83,7 +83,7 @@ function ribbonAction(primaryControl: Xrm.FormContext) {
 ### `PrimaryControl` — creation and getters/setters
 
 ```ts
-import PrimaryControl from "@sguez/d365-form-helpers";
+import PrimaryControl from "@sguez/d365-form-helpers/PrimaryControl";
 
 function example(executionContext: Xrm.Events.EventContext) {
   const formContext: PrimaryControl = new PrimaryControl(executionContext.getFormContext()); // or use Provider.from(executionContext)
@@ -162,7 +162,7 @@ function registerHandlers(formContext: Xrm.FormContext) {
   // Standard control
   formContext.addOnOutputChange('someControl', ctx => console.log('output changed'));
 
-  // KB Search control
+  // KnowledgeBase Search control
   formContext.addOnResultOpened('kbSearch', ctx => console.log('result opened'));
   formContext.addOnSelection('kbSearch', ctx => console.log('kb selection'));
   formContext.addOnPostSearch('kbSearch', ctx => console.log('post search'));
@@ -227,5 +227,3 @@ if (isAttribute(attribute)) {
 ## Notes & best practices
 
 * The helpers accept multiple input shapes: name (string), index (number), array, predicate delegate or an instance — this reduces branching in your code.
-
----
