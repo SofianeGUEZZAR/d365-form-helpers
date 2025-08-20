@@ -2,7 +2,7 @@
 
 Minimal TypeScript helpers that wrap Dynamics 365 / Power Apps client-side `formContext` APIs with typed, ergonomic utilities for form scripting. This repository contains the exact code you provided and concise, copy‑paste examples for every public function.
 
-> Install (single line):
+Install the package in your project directory with:
 
 ```bash
 npm install @sguez/d365-form-helpers
