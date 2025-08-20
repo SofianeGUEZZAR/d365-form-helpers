@@ -41,8 +41,8 @@ Make Dynamics client scripting:
 
   * safe getters: `getAttribute`, `getControl`, `getTab`, `getSection`, `getAttributeValue`
   * flexible setters: `setAttributeValue`, `setRequiredLevel`, `setOptional`, `setRecommended`, `setMandatory`, `setVisible`, `setDisabled`
-  * (bulk operations supporting names, indexes, arrays, delegates and direct instances)
   * Event setters: `addOnLoad`, `addOnSave`, `addOnChange`, `addTabStateChange`, `addPreSearch`, `addSubGridOnLoad`, `addOnReadyStateComplete`, `addOnOutputChange`, `addOnResultOpened`, `addOnSelection`, `addOnPostSearch`.
+  * (bulk operations supporting names, indexes, arrays, delegates and direct instances)
 * `TabControl` — wrapper for a single tab providing `getSection`, label methods, visibility and focus helpers.
 * `CheckTypes` — runtime type guards for Xrm objects (attributes, controls, tabs, grids, iframes, kb search controls, etc.).
 
