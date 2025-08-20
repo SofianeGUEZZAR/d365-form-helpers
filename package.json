@@ -1,0 +1,46 @@
+{
+  "name": "d365-form-helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/core/index.js",
+  "types": "dist/core/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Chisyeuf",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/xrm": "^9.0.87",
+    "typescript": "^5.9.2"
+  },
+  
+  "exports": {
+    "./CheckTypes": {
+        "types": "./dist/core/CheckTypes.d.ts",
+        "default": "./dist/core/CheckTypes.js"
+    },
+    "./FormContext": {
+        "types": "./dist/core/FormContext.d.ts",
+        "default": "./dist/core/FormContext.js"
+    },
+    "./PrimaryControl": {
+        "types": "./dist/core/PrimaryControl.d.ts",
+        "default": "./dist/core/PrimaryControl.js"
+    },
+    "./Provider": {
+        "types": "./dist/core/Provider.d.ts",
+        "default": "./dist/core/Provider.js"
+    },
+    "./TabControl": {
+        "types": "./dist/core/TabControl.d.ts",
+        "default": "./dist/core/TabControl.js"
+    },
+    ".": {
+        "types": "./dist/core/index.d.ts",
+        "default": "./dist/core/index.js"
+    }
+  }
+}
