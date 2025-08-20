@@ -1,6 +1,6 @@
 {
   "name": "@sguez/d365-form-helpers",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/core/index.js",
   "types": "dist/core/index.d.ts",
@@ -17,6 +17,7 @@
     "@types/xrm": "^9.0.87",
     "typescript": "^5.9.2"
   },
+  "repository": {"type": "git", "url": "git+https://github.com/SofianeGUEZZAR/d365-form-helpers.git"},
 
   "exports": {
     "./CheckTypes": {
